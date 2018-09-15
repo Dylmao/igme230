@@ -38,6 +38,21 @@ body {
     grid-column-start: col-start 1;
 }
 
+a:link {
+    color:#ffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ffec42;
+    text-decoration: none;
+}
+
 .projects {
     grid-row: rows 4 / span rows 1;
     grid-column: 10 / span col-start 10;
