@@ -104,6 +104,10 @@ ul {
     margin-bottom: 10%;
 }
 
+.week5a {
+    margin-bottom: 10%;
+}
+
 /* list item hover states */
 .p1:hover {
     color: #ffec42;
@@ -122,5 +126,9 @@ ul {
 }
 
 .week3b:hover {
+    color: #ffec42;
+}
+
+.week5a:hover {
     color: #ffec42;
 }
