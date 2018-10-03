@@ -83,59 +83,11 @@ ul {
     grid-column: 12 / span col-start 13;
 }
 
-.p1 {
-    margin-bottom: 10%;
-}
-
-.p2 {
-    margin-bottom: 10%;
-}
-
-.p3 {
-    margin-bottom: 10%;
-}
-
-.week3a {
-    margin-bottom: 10%;
-}
-
-.week3b {
-    margin-bottom: 10%;
-}
-
-.week5a {
-    margin-bottom: 10%;
-}
-
-.week6a {
+.p1, .p2, .p3, .week3a, .week3b, .week5a, .week6a {
     margin-bottom: 10%;
 }
 
 /* list item hover states */
-.p1:hover {
-    color: #ffec42;
-}
-
-.p2:hover {
-    color: #ffec42;
-}
-
-.p3:hover {
-    color: #ffec42;
-}
-
-.week3a:hover {
-    color: #ffec42;
-}
-
-.week3b:hover {
-    color: #ffec42;
-}
-
-.week5a:hover {
-    color: #ffec42;
-}
-
-.week6a:hover {
+.p1:hover, .p2:hover, .p3:hover, .week3a:hover, .week3b:hover, .week5a:hover, .week6a:hover {
     color: #ffec42;
 }
