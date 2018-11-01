@@ -83,11 +83,11 @@ ul {
     grid-column: 12 / span col-start 13;
 }
 
-.p1, .p2, .p3, .week3a, .week3b, .week5a, .week6a, .week6b1, .week7, .cssAnim, .svg, .helloWorld, .dom {
+.p1, .p2, .p3, .week3a, .week3b, .week5a, .week6a, .week6b1, .week7, .cssAnim, .svg, .helloWorld, .dom, .webStorage {
     margin-bottom: 10%;
 }
 
 /* list item hover states */
-.p1:hover, .p2:hover, .p3:hover, .week3a:hover, .week3b:hover, .week5a:hover, .week6a:hover, .week6b1:hover, .week7:hover, .cssAnim:hover, .svg:hover, .helloWorld:hover, .dom:hover {
+.p1:hover, .p2:hover, .p3:hover, .week3a:hover, .week3b:hover, .week5a:hover, .week6a:hover, .week6b1:hover, .week7:hover, .cssAnim:hover, .svg:hover, .helloWorld:hover, .dom:hover, .webStorage:hover {
     color: #ffec42;
 }
