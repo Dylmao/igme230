@@ -1,0 +1,11 @@
+#uiPic {
+    display:flex;
+    margin-left:600px;
+}
+
+p {
+    max-width:800px;
+    display:flex;
+    margin:40px auto;
+    font-size:1.3rem;
+}
