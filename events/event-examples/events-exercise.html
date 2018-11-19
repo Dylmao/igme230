@@ -41,7 +41,35 @@
 </div>
 
 <script>
-/* Write your code here! */
+
+	let radiobuttons = document.querySelectorAll("input");
+
+	let response = document.querySelector("#info");
+
+	let legend = document.querySelector("#colorform legend");
+
+	let button = document.querySelector("#colorButton");
+
+	let submit = document.querySelector("#colorform button");
+	let currentColor = "black";
+
+	let changeText = (e) => { 
+		response.innerHTML = "You have selected the color " + e.target.value;
+		currentColor = e.target.value;
+	}
+
+	let finalAnswer = (e) => {
+		 info.innerHTML = "Your FINAL CHOICE is " +  currentColor; 
+		 legend.style.color = currentColor;
+	}
+
+	for (let i = 0; i < radiobuttons.length; i++) {
+		radiobuttons[i].addEventListener("click", changeText);
+	}
+
+	button.addEventListener("click", finalAnswer);
+	
+
 </script>
 </body>
 </html>
