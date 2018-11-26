@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color:#F3CD08;
+}
+
+h1 {
+    color:#7A0000;
+    font-size:8rem;
+    font-weight:400;
+    font-style:italic;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+  }
+
+  .davis {
+    font-weight:700;
+}
+
+  nav {
+    display: flex;
+    flex-direction: column; /* main axis vertical; places menu below togglebar */
+    align-items: flex-start;  /* moves contents to start of cross-axis (horizontal) */
+}
+
+  #togglebar {
+    height: 25px;
+    width: 125px;
+    border: 1px solid;
+    text-align: center;
+    background-color: white; 
+    z-index: 3;
+}
+
+#menu {
+    height: 200px;
+    width: 125px;
+    top: 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    z-index: 2;
+    position:absolute;
+}
+
+#banana {
+    position:absolute;
+    top:0px;
+    transform:rotate(180deg);
+    margin-left:1200px;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1200px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Week 12 JS Exercise</title>
+</head>
+<body>
+    <div class="wrapper" id="page1">
+        <!-- Nav -->
+        <nav>
+            <div id="togglebar">Navigation</div>
+            <div id="menu">
+                <ul style = "list-style-type:none">
+                    <a href = "index.html"><li id = "home">Home</li></a>
+                    &nbsp &nbsp<li id = "resume">Resume</li>
+                    &nbsp &nbsp<li id = "contact">Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Photo of myself -->
+        <img id = "banana" src = "images/banana.png">
+
+        <div class = "header">
+            <h1>D  Y  L  A  N &nbsp &nbsp<span class = "davis">D  A  V  I  S</span></h1>
+        </div>
+<!-- "TO NEXT PAGE" Anchor link -->
+        <div class="footer"><a href="#page2">Jump to Gallery</a></div>
+    </div>
+
+    <script>
+/* Nav Menu JS */
+        $("#togglebar").click(function () {
+            $("#menu").slideToggle("slow");
+        });
+
+/* Page anchor link to Gallery below */
+            /* JQuery for smooth scrolling (easier than native JS code)
+           Found at https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link */
+
+        $("a[href^='#']").click(function (event) {
+            event.preventDefault();
+            let target = $(this.hash);
+            $('html, body').animate({ scrollTop: target.offset().top }, 500);
+
+            // Make this more accessible by setting target.focus(); 
+            // See https://css-tricks.com/smooth-scrolling-accessibility/ for details
+
+            if (target.is(":focus")) { // Checking if the target was focused
+                return false;
+            } else {
+                target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                target.focus(); // Setting focus
+            };
+
+        });
+
+        </script>
+    
+
+        <!-- <div class = "nav">
+            <ul style = "list-style-type:none">
+                <a href = "index.html"><li id = "home">H o m e</li></a>
+                    <ul style = "list-style-type:none">
+                        &nbsp &nbsp<li id = "resume">R e s u m e</li>
+                            <ul style = "list-style-type:none">
+                                &nbsp &nbsp<li id = "contact">C o n t a c t</li>
+                            </ul>
+                    </ul>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="wrapper" id="page2">
+            <!--Gallery-->
+        <div id = "gallery">
+            <a id = "uiLink" href = "ui.html"><img id = "ui" src = "images/Reporter mock.PNG"></a>
+            <p id = uiTitle>UI/UX</p>
+            <a id = "photoLink" href = "photography.html"><img id = "photo" src = "images/photo.jpg"></a>
+            <p id = photoTitle>Photography</p>
+            <a id = "moLink" href = "motion.html"><img id = "motion" src = "images/motion.png"></a>
+            <p id = moTitle>Motion</p>
+        <!-- "TO PREVIOUS PAGE" Anchor link -->
+            <div class="footer"><a href="#page1">Jump to Home page</a></div>
+        </div>
+   </div>
+</body>
+</html>
