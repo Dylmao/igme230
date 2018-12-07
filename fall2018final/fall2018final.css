@@ -1,0 +1,139 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+***************/
+header {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-area:header;
+    background:lightpink;
+}
+
+nav {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-area:nav;
+    background:lavenderblush;
+}
+
+article {
+    display:flex;
+    justify-content:flex-end;
+    grid-area:article;
+    background:lightcyan;
+}
+
+aside {
+    display:flex;
+    justify-content:flex-start;
+    grid-area:aside;
+    background:lightblue;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-area:footer;
+    background:lightpink;
+}
+
+#extracredit {
+    display:flex;
+    justify-content:flex-end;
+    grid-area:extraCred;
+}
+
+.top {
+    width:6rem;
+    background:#ccc;
+}
+
+.list {
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:none;
+    z-index:1;
+    position:absolute;
+    background:#ddd;
+}
+
+li {
+    padding-left:.25rem;
+    background:#ddd;
+}
+
+/* Mobile Grid */
+#mygrid {
+    display:grid;
+    width:100vw;
+    min-height:100vh;
+    margin:0 auto;
+
+    grid-template-columns:1fr;
+    grid-template-rows:75px 30px auto auto 30px;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "aside"
+        "footer";
+}
+
+/* Desktop Grid */
+@media only screen and (min-width: 600px) {
+    #mygrid {
+        display: grid;
+        width:90vw;
+        max-width:1000px;
+        min-height:100vh;
+        justify-content: center;
+
+        grid-template-columns:1fr 2fr;
+        grid-template-rows:75px 30px 1fr 2fr 50px;
+
+        /* grid areas setup*/
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside article"
+        "extraCred"
+        "footer footer"
+    }    
+}
