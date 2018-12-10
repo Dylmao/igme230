@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color:#F3CD08;
+}
+
+.davis {
+    font-weight:400;
+}
+
+a {
+    cursor:pointer;
+    text-decoration-line:none;
+}
+
+a:visited {
+    text-decoration-line:none;
+    color:#0000;
+}
+
+h1 {
+    grid-area:header;
+}
+
+#gallery {
+    grid-area:gallery;
+}
+
+#footer {
+    grid-area:footer;
+}
+
+#uiLink {
+    grid-area:ui;
+}
+
+#moLink {
+    grid-area:motion;
+}
+
+#photoLink {
+    grid-area:photo;
+}
+
+h1 {
+    color:#7A0000;
+    margin:0;
+    font-weight:700;
+    font-style:italic;
+}
+
+#ui {
+    width:90%;
+    height:90%;
+}
+
+#photo {
+    width:90%;
+    height:90%;
+}
+
+#motion {
+    width:90%;
+    height:90%;
+}   
+
+.menuitem {
+    margin:0 auto;
+    background:white;
+    border:1px solid white;
+}
+
+.submenu {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:none;
+}
+
+li {
+    padding-left:.25rem;
+    background: lightgrey;
+}
+
+nav {
+    display:flex;
+    justify-content:flex-end;
+    margin:0;
+}
+
+/* Mobil Grid */
+#grid {
+    display:grid;
+    width:100vw;
+    min-height:100vh;
+    margin: 0 auto;
+
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+
+    grid-template-areas:
+    "header"
+    "gallery"
+    "footer";
+}
+
+#gallery {
+    display:grid;
+
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr 1fr;
+
+    grid-template-areas:
+        "ui"
+        "photo"
+        "motion";
+}
+
+/* Desktop Grid */
+@media only screen and (min-width: 600px) {
+    #grid {
+        max-width:1000px;
+        min-height:100vh;
+        margin: 0 auto;
+
+        grid-template-rows:100px 4fr 100px;
+
+        grid-template-areas:
+        "header"
+        "gallery"
+        "footer";
+    }
+
+    #gallery {
+        display:grid;
+
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+
+        grid-template-areas:
+        "ui . ."
+        ". photo ."
+        ". . motion";
+
+    }
+
+    h1 {
+        color:#7A0000;
+        font-size:5rem;
+        margin:0;
+        font-weight:700;
+        font-style:italic;
+    }
+
+    #uiTitle {
+        font-weight:900;
+        color:#7A0000;
+        font-size:2rem;
+    }
+    
+    #photoTitle {
+        font-weight:900;
+        color:#7A0000;
+        z-index:1;
+        font-size:2rem;
+    }
+    
+    #moTitle {
+        font-weight:900;
+        color:#7A0000;
+        font-size:2rem;
+    }
+}
+

@@ -1,0 +1,14 @@
+Audience: Professionals in the creative industry, specifically those looking to hire. Anyone who wants to see my work.
+Most people would probably view my site from their laptop or desktop, occasionally on their phone.
+
+I decided to go with a brutalist take on my portfolio design simply because I am bored with the "cookie cutter"
+website trends that are happening right now. They work, any maybe better than my site, but at least mine is interesting
+and different.
+
+All of my content was created by myself, except for the jquery I used for the drop down menu, that I took from the 
+practice practical. - I modified it to contain my links and look more appropriate on my page.
+
+Since the first iteration of this project I have fixed the grid to be more uniform and put together. I have also 
+added jquery for the new drop down menu, and I have re-made all of the pages to be unique and funtional for both a 
+desktop or a mobile device.
+
